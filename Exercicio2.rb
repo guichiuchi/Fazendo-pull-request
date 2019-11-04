@@ -10,13 +10,13 @@ total = 4_000_000
 a, b = 2, 3
 pair = 2
 
-def getPair(a, b, pair, total)
+def get_pair(a, b, pair, total)
   if ((c = a + b) < total)
     pair += c if c % 2 == 0
-     getPair(b, c, pair, total)
+     get_pair(b, c, pair, total)
   end
   pair
 end
 
-puts getPair(a, b, pair, total)
+puts get_pair(a, b, pair, total)
 
